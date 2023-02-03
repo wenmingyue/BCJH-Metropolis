@@ -35,4 +35,5 @@ void toolEquipped(Chef *chef) {
         skill.abilityBuff.steam += 25; // 蒸售价+25%
         chef->tool = NO_TOOL;         // 不允许装备其他厨具
 }
+   }
 #endif
