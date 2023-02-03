@@ -43,5 +43,10 @@ void toolEquipped(Chef *chef) {
         skill.materialBuff.creation += 15;
         chef->tool = NO_TOOL;
     }
+    
+    if (chef->name == "常鹅") {   // 吃饱兔餐盘
+        skill.ability.knife += 150; // 切技法+150
+        skill.abilityBuff.steam += 25; // 蒸售价+25%
+        chef->tool = NO_TOOL;         // 不允许装备其他厨具
 }
 #endif
